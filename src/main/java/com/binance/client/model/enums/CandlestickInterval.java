@@ -3,7 +3,7 @@ package com.binance.client.model.enums;
 /**
  * 1min, 5min, 15min, 30min, 60min, 1day, 1mon, 1week, 1year
  */
-public enum CandlestickInterval {
+public enum  CandlestickInterval {
     ONE_MINUTE("1m"),
     THREE_MINUTES("3m"),
     FIVE_MINUTES("5m"),

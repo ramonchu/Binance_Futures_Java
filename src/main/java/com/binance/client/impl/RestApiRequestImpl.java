@@ -1008,9 +1008,10 @@ class RestApiRequestImpl {
                 element.setPositionInitialMargin(item.getBigDecimal("positionInitialMargin"));
                 element.setSymbol(item.getString("symbol"));
                 element.setUnrealizedProfit(item.getBigDecimal("unrealizedProfit"));
-                element.setEntryPrice(item.getString("entryPrice"));
+                element.setEntryPrice(item.getBigDecimal("entryPrice"));
                 element.setMaxNotional(item.getString("maxNotional"));
                 element.setPositionSide(item.getString("positionSide"));
+                element.setPositionAmt(item.getBigDecimal("positionAmt"));
                 positionList.add(element);
             });
             result.setPositions(positionList);

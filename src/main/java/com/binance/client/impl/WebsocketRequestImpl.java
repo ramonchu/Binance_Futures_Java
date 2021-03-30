@@ -508,8 +508,8 @@ class WebsocketRequestImpl {
                 orderUpdate.setLastFilledQty(jsondata.getBigDecimal("l"));
                 orderUpdate.setCumulativeFilledQty(jsondata.getBigDecimal("z"));
                 orderUpdate.setLastFilledPrice(jsondata.getBigDecimal("L"));
-                orderUpdate.setCommissionAsset(jsondata.getString("N"));
-                orderUpdate.setCommissionAmount(jsondata.getLong("n"));
+                // orderUpdate.setCommissionAsset(jsondata.getString("N"));
+                // orderUpdate.setCommissionAmount(jsondata.getLong("n"));
                 orderUpdate.setOrderTradeTime(jsondata.getLong("T"));
                 orderUpdate.setTradeID(jsondata.getLong("t"));
                 orderUpdate.setBidsNotional(jsondata.getBigDecimal("b"));
